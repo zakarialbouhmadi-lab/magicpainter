@@ -1,0 +1,611 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="windows.ControlPanel">
+  <grid id="27dc6" binding="contentPane" custom-create="true" layout-manager="GridLayoutManager" row-count="4" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="10" left="10" bottom="10" right="10"/>
+    <constraints>
+      <xy x="21" y="14" width="589" height="589"/>
+    </constraints>
+    <properties>
+      <background color="-1118482"/>
+      <enabled value="true"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="15b7c" binding="colorsPanel" layout-manager="GridLayoutManager" row-count="4" column-count="7" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="5" left="5" bottom="5" right="5"/>
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-9309658"/>
+          <font size="12"/>
+        </properties>
+        <border type="line"/>
+        <children>
+          <component id="aaad6" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="6" vsize-policy="0" hsize-policy="0" anchor="1" fill="0" indent="1" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Chilanka" size="16" style="1"/>
+              <foreground color="-16777216"/>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="0"/>
+              <text value="COLORS"/>
+            </properties>
+          </component>
+          <component id="a1f50" class="javax.swing.JSlider" binding="alphaSlider">
+            <constraints>
+              <grid row="1" column="2" row-span="1" col-span="4" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-16721852"/>
+              <majorTickSpacing value="10"/>
+              <maximum value="255"/>
+              <minimum value="0"/>
+              <minorTickSpacing value="5"/>
+              <paintLabels value="false"/>
+              <paintTicks value="false"/>
+              <paintTrack value="true"/>
+              <value value="20"/>
+              <valueIsAdjusting value="false"/>
+            </properties>
+          </component>
+          <component id="68d4" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Chilanka"/>
+              <foreground color="-16777216"/>
+              <horizontalAlignment value="10"/>
+              <horizontalTextPosition value="11"/>
+              <text value="min HUE "/>
+            </properties>
+          </component>
+          <component id="257eb" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Chilanka"/>
+              <foreground color="-16777216"/>
+              <horizontalAlignment value="10"/>
+              <horizontalTextPosition value="11"/>
+              <text value="max HUE "/>
+            </properties>
+          </component>
+          <component id="b17b2" class="components.MyTextField.FloatTextField" binding="textFieldHueMin" custom-create="true">
+            <constraints>
+              <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <preferred-size width="50" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <horizontalAlignment value="0"/>
+            </properties>
+          </component>
+          <component id="3a1e4" class="components.MyTextField.FloatTextField" binding="textFieldHueMax" custom-create="true">
+            <constraints>
+              <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <preferred-size width="50" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <horizontalAlignment value="0"/>
+            </properties>
+          </component>
+          <component id="f91e0" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Chilanka"/>
+              <foreground color="-16777216"/>
+              <horizontalAlignment value="10"/>
+              <horizontalTextPosition value="11"/>
+              <text value="x SAT "/>
+            </properties>
+          </component>
+          <component id="4765a" class="components.MyTextField.FloatTextField" binding="textFieldSatCoef" custom-create="true">
+            <constraints>
+              <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <preferred-size width="50" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <horizontalAlignment value="0"/>
+            </properties>
+          </component>
+          <component id="23b95" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Chilanka"/>
+              <foreground color="-16777216"/>
+              <horizontalAlignment value="10"/>
+              <horizontalTextPosition value="11"/>
+              <text value="x BRI "/>
+            </properties>
+          </component>
+          <component id="2d7f2" class="components.MyTextField.FloatTextField" binding="textFieldBriCoef" custom-create="true">
+            <constraints>
+              <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <preferred-size width="50" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <horizontalAlignment value="0"/>
+            </properties>
+          </component>
+          <component id="5210d" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Chilanka"/>
+              <foreground color="-16777216"/>
+              <horizontalAlignment value="10"/>
+              <horizontalTextPosition value="11"/>
+              <text value=" Alpha"/>
+            </properties>
+          </component>
+          <component id="9141c" class="javax.swing.JCheckBox" binding="originalHueCheckBox">
+            <constraints>
+              <grid row="2" column="4" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-16721852"/>
+              <font name="Chilanka" style="1"/>
+              <foreground color="-16777216"/>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="2"/>
+              <text value="Original Hue"/>
+            </properties>
+          </component>
+          <component id="88995" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="3" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Chilanka"/>
+              <foreground color="-16777216"/>
+              <horizontalAlignment value="10"/>
+              <horizontalTextPosition value="11"/>
+              <text value="Spec.time"/>
+            </properties>
+          </component>
+          <component id="1251" class="components.MyTextField.FloatTextField" binding="textFieldSpectrumTime" custom-create="true">
+            <constraints>
+              <grid row="3" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <preferred-size width="50" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="d6e8d" class="javax.swing.JLabel" binding="alphaLabel">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Chilanka" size="14"/>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="0"/>
+              <text value="0"/>
+            </properties>
+          </component>
+          <component id="269f5" class="javax.swing.JRadioButton" binding="blendRadioBtn">
+            <constraints>
+              <grid row="1" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <horizontalAlignment value="2"/>
+              <horizontalTextPosition value="11"/>
+              <selected value="true"/>
+              <text value="Blend"/>
+            </properties>
+          </component>
+          <component id="d646" class="javax.swing.JRadioButton" binding="replaceRadioButton" default-binding="true">
+            <constraints>
+              <grid row="2" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <horizontalAlignment value="2"/>
+              <horizontalTextPosition value="11"/>
+              <text value="Replace"/>
+            </properties>
+          </component>
+          <component id="fb116" class="javax.swing.JRadioButton" binding="onlyOnceRadioButton" default-binding="true">
+            <constraints>
+              <grid row="3" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <horizontalAlignment value="2"/>
+              <horizontalTextPosition value="11"/>
+              <text value="Only once"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="839c5" binding="paintersPanel" layout-manager="GridLayoutManager" row-count="4" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="5" left="5" bottom="5" right="5"/>
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-592081"/>
+        </properties>
+        <border type="line"/>
+        <children>
+          <component id="e6ea7" class="javax.swing.JLabel" binding="paintersLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="1" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Chilanka" size="16" style="1"/>
+              <foreground color="-16777216"/>
+              <text value="PAINTERS = 0"/>
+            </properties>
+          </component>
+          <component id="efd0f" class="components.MyTextField.FloatTextField" binding="textFieldNumOfParticles" custom-create="true">
+            <constraints>
+              <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <preferred-size width="50" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="3829" class="javax.swing.JButton" binding="buttonClearFirst">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-338420"/>
+              <font name="Chilanka" style="1"/>
+              <foreground color="-16777216"/>
+              <text value="X First"/>
+            </properties>
+          </component>
+          <component id="4be00" class="javax.swing.JButton" binding="buttonClearLast">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-338420"/>
+              <font name="Chilanka" style="1"/>
+              <foreground color="-16777216"/>
+              <text value="X Last"/>
+            </properties>
+          </component>
+          <component id="ea106" class="javax.swing.JButton" binding="buttonClearSystems">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-338420"/>
+              <font name="Chilanka" style="1"/>
+              <foreground color="-16777216"/>
+              <text value="X All"/>
+            </properties>
+          </component>
+          <component id="840f5" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Chilanka"/>
+              <foreground color="-16777216"/>
+              <text value="Particles"/>
+            </properties>
+          </component>
+          <component id="2c96c" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Chilanka"/>
+              <foreground color="-16777216"/>
+              <text value="Velocity"/>
+            </properties>
+          </component>
+          <component id="c5f53" class="components.MyTextField.FloatTextField" binding="textFieldMaxVelocity" custom-create="true">
+            <constraints>
+              <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <preferred-size width="50" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="66697" class="javax.swing.JButton" binding="pausePaintersButton">
+            <constraints>
+              <grid row="3" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-338420"/>
+              <font name="Chilanka" style="1"/>
+              <foreground color="-16777216"/>
+              <text value="PAUSE"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <component id="91831" class="javax.swing.JLabel" binding="fpsLabel">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Chilanka" size="16" style="1"/>
+          <foreground color="-16777216"/>
+          <text value="Frames Per Second = 60"/>
+        </properties>
+      </component>
+      <grid id="283bb" binding="gridPanel" layout-manager="GridLayoutManager" row-count="4" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="5" left="5" bottom="5" right="5"/>
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-19951"/>
+        </properties>
+        <border type="line"/>
+        <children>
+          <component id="40e27" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="0" anchor="1" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Chilanka" size="16" style="1"/>
+              <foreground color="-16777216"/>
+              <text value="FORCES"/>
+            </properties>
+          </component>
+          <component id="25f3a" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Chilanka"/>
+              <foreground color="-16777216"/>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="0"/>
+              <text value="Scale"/>
+            </properties>
+          </component>
+          <component id="22c1d" class="components.MyTextField.FloatTextField" binding="textFieldScale" custom-create="true">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <preferred-size width="50" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="2af36" class="javax.swing.JCheckBox" binding="showGridFlowsCheckBox" default-binding="true">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-1027057"/>
+              <font name="Chilanka" style="1"/>
+              <foreground color="-16777216"/>
+              <hideActionText value="false"/>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="2"/>
+              <selected value="true"/>
+              <text value="Show Forces"/>
+            </properties>
+          </component>
+          <component id="6af0c" class="components.MyTextField.FloatTextField" binding="textFieldMagnitude" custom-create="true">
+            <constraints>
+              <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <preferred-size width="50" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="bb29a" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Chilanka"/>
+              <foreground color="-16777216"/>
+              <text value="Mag"/>
+            </properties>
+          </component>
+          <component id="70235" class="javax.swing.JButton" binding="pauseForcesButton">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-1027057"/>
+              <font name="Chilanka" style="1"/>
+              <foreground color="-16777216"/>
+              <text value="PAUSE"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="474b0" binding="canvasPanel" layout-manager="GridLayoutManager" row-count="5" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="5" left="5" bottom="5" right="5"/>
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-10953217"/>
+          <enabled value="true"/>
+        </properties>
+        <border type="line"/>
+        <children>
+          <component id="b5178" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Chilanka"/>
+              <foreground color="-16777216"/>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="0"/>
+              <text value="Width"/>
+            </properties>
+          </component>
+          <component id="a22fa" class="components.MyTextField.FloatTextField" binding="textFieldCanvasWidth" custom-create="true">
+            <constraints>
+              <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <preferred-size width="50" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="a5565" class="javax.swing.JButton" binding="buttonResizeCanvas">
+            <constraints>
+              <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-14770433"/>
+              <font name="Chilanka" style="1"/>
+              <foreground color="-16777216"/>
+              <text value="RESIZE"/>
+            </properties>
+          </component>
+          <component id="f07d9" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Chilanka"/>
+              <foreground color="-16777216"/>
+              <text value="Height"/>
+            </properties>
+          </component>
+          <component id="df766" class="components.MyTextField.FloatTextField" binding="textFieldCanvasHeight" custom-create="true">
+            <constraints>
+              <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <preferred-size width="50" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="f0b37" class="javax.swing.JButton" binding="buttonEraseImage">
+            <constraints>
+              <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-14770433"/>
+              <font name="Chilanka" style="1"/>
+              <foreground color="-16777216"/>
+              <text value="ERASE"/>
+            </properties>
+          </component>
+          <component id="8507b" class="javax.swing.JLabel" binding="labelImageSize">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Chilanka" size="15" style="1"/>
+              <foreground color="-65536"/>
+              <text value="No image loaded !"/>
+            </properties>
+          </component>
+          <component id="1037a" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="1" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Chilanka" size="16" style="1"/>
+              <foreground color="-16777216"/>
+              <text value="CANVAS"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="1b9fb" binding="controlsPanel" layout-manager="GridLayoutManager" row-count="5" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="5" left="5" bottom="5" right="5"/>
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-441528"/>
+        </properties>
+        <border type="line"/>
+        <children>
+          <component id="52129" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Chilanka"/>
+              <foreground color="-16777216"/>
+              <text value="Name"/>
+            </properties>
+          </component>
+          <component id="972e0" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="1" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Chilanka" size="16" style="1"/>
+              <foreground color="-16777216"/>
+              <text value="IMAGE"/>
+            </properties>
+          </component>
+          <component id="4692a" class="javax.swing.JButton" binding="buttonSave">
+            <constraints>
+              <grid row="4" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="2" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-4390890"/>
+              <font name="Chilanka" style="1"/>
+              <foreground color="-16777216"/>
+              <text value="SAVE"/>
+            </properties>
+          </component>
+          <component id="19ef4" class="javax.swing.JTextField" binding="textFieldSaveFileName">
+            <constraints>
+              <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="3" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <text value="my_file"/>
+            </properties>
+          </component>
+          <component id="857e7" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Chilanka"/>
+              <foreground color="-16777216"/>
+              <text value="Name"/>
+            </properties>
+          </component>
+          <component id="c78e3" class="javax.swing.JTextField" binding="textFieldLoadFileName">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="3" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-1"/>
+              <text value="pic.jpg"/>
+            </properties>
+          </component>
+          <component id="65ae9" class="javax.swing.JButton" binding="buttonLoad">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="2" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-4390890"/>
+              <font name="Chilanka" style="1"/>
+              <foreground color="-16777216"/>
+              <text value="LOAD"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
