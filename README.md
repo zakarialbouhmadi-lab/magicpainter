@@ -47,40 +47,36 @@ The project includes a robust control panel with several modules:
 
 
 
-**COLORS:** * Adjust the `Alpha` transparency.
+**COLORS:** 
 
+* Adjust the `Alpha` transparency.
 
 * Toggle `Original Hue` to use the image's exact colors, or map colors to a custom hue spectrum (`min HUE` and `max HUE`).
 
-
 * Multiply saturation and brightness using `x SAT` and `x BRI` text fields.
-
 
 * Choose the drawing blend mode (`Blend`, `Replace`).
 
 
 
 
-**PAINTERS:** * Define the number of `Particles` spawned per click and their maximum `Velocity`.
+**PAINTERS:** 
 
+* Define the number of `Particles` spawned per click and their maximum `Velocity`.
 
 * Delete the first, last, or all active particle systems to manage performance.
-
 
 * Pause/Resume painter movement.
 
 
 
+**FORCES:** 
 
-**FORCES:** * Adjust the Perlin noise `Scale` and vector `Mag` (Magnitude).
-
+* Adjust the Perlin noise `Scale` and vector `Mag` (Magnitude).
 
 * Toggle `Show Forces` to visualize the underlying vector grid driving the particles.
 
-
 * Pause/Resume the flow field evolution.
-
-
 
 
 
