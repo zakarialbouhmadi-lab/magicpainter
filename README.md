@@ -1,5 +1,6 @@
 # Magic Painter
 
+
 ## Overview
 
 **Magic Painter** is an interactive, Java-based generative art application built using the Processing library. It utilizes particle systems driven by Perlin noise flow fields to dynamically redraw uploaded images in a creative, algorithmic style. The application features a custom multi-window setup: a main drawing canvas and a dedicated Java Swing Control Panel for real-time parameter tuning.
@@ -98,3 +99,14 @@ git clone https://github.com/yourusername/magic-painter.git
 
 
 4. Compile and run the `Main.java` class.
+
+
+## Screenshots
+
+<img width="1802" height="787" alt="Screenshot_20260309_224506" src="https://github.com/user-attachments/assets/cc650589-0612-48d1-8752-c936b907420e" />
+<img width="1802" height="787" alt="Screenshot_20260309_224534" src="https://github.com/user-attachments/assets/55a3f894-e555-4e15-a869-7d87dddaa455" />
+<img width="1806" height="983" alt="Screenshot_20260309_225614" src="https://github.com/user-attachments/assets/82e5e591-7d47-4581-9264-06997df240de" />
+<img width="1806" height="983" alt="Screenshot_20260309_225658" src="https://github.com/user-attachments/assets/bfa4e5b6-1a28-4539-9b24-e701732e0229" />
+<img width="1806" height="983" alt="Screenshot_20260309_225848" src="https://github.com/user-attachments/assets/58a4d901-bd09-4c56-baf0-669ea8086940" />
+<img width="1806" height="983" alt="Screenshot_20260309_225957" src="https://github.com/user-attachments/assets/54f9444b-e7c0-48d6-85b0-c4acba524167" />
+<img width="1806" height="983" alt="Screenshot_20260309_230004" src="https://github.com/user-attachments/assets/e9fef1f2-a959-40de-a5fa-fa31987d5c2c" />
